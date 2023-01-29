@@ -18,7 +18,7 @@ public class Main {
 		myNumbers.stream()
 		.sorted((String o1,String o2)-> o1.length()-o2.length())
 		.collect(Collectors.toList())
-		.forEach(System.out::print);
+		.forEach(System.out::println);
 		
 	}
 }
