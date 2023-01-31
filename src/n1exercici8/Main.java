@@ -17,8 +17,7 @@ public class Main {
 			StringBuilder stringSB= new StringBuilder(word) ;
 			return stringSB.reverse().toString();
 			};
-			
-		String wordToReverse = "KRAKEN";
+					String wordToReverse = "KRAKEN";
 		String reverseWord= reverseString.reverse(wordToReverse);   //mediante el método reverse de la IntFunc.
 		System.out.println("Using FuncInt:  "+reverseWord);    
 		
