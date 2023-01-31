@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Devuelve {
+public class App {
 
 	public static void main(String[] args) {
 	
