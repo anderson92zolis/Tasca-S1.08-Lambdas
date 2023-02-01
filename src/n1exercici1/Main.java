@@ -8,33 +8,26 @@ public class Main {
 
 	public static void main(String[] args) {
 		/*
-		 * - Exercici 1
-		 * A partir d’una llista de Strings, escriu un mètode que retorna una llista de totes les cadenes que contenen la lletra ‘o’. 
-		 * Imprimeix el resultat.
-
+		 * - Exercici 1 A partir d’una llista de Strings, escriu un mètode que retorna
+		 * una llista de totes les cadenes que contenen la lletra ‘o’. Imprimeix el
+		 * resultat.
+		 * 
 		 */
-	
-		
-	ArrayList<String> llistaString = new ArrayList<String>(Arrays.asList("Volvo","BMW","Ford","Mazda"));
-	
-	containO(llistaString).forEach(wordWithO-> {
-		System.out.println("These are the words that contain 'o' :"+ wordWithO);
+
+		ArrayList<String> llistaString = new ArrayList<String>(Arrays.asList("Volvo", "BMW", "Ford", "Mazda"));
+
+		containO(llistaString).forEach(wordWithO -> {
+			System.out.println("These are the words that contain 'o' :" + wordWithO);
 		});
-	
+
 	}
-	
-	
-	
-	public static ArrayList<String> containO( ArrayList<String> llistaString){
-		
+
+	public static ArrayList<String> containO(ArrayList<String> llistaString) {
+
 		ArrayList<String> containO = (ArrayList<String>) llistaString.stream()
-				.filter(word->word.toLowerCase().contains("o"))
-				.collect(Collectors.toList());
-			
+				.filter(word -> word.toLowerCase().contains("o")).collect(Collectors.toList());
+
 		return containO;
 	}
-	
-	
+
 }
-
-

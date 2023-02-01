@@ -6,14 +6,12 @@ public class Month {
 
 	public static void main(String[] args) {
 		/*
-		 * Exercici 3
-		 * Crea una llista amb els noms dels mesos de l’any. Imprimeix tots els elements
-		 * de la llista amb una lambda.
+		 * Exercici 3 Crea una llista amb els noms dels mesos de l’any. Imprimeix tots
+		 * els elements de la llista amb una lambda.
 		 */
-		
-		
-		ArrayList<String> ArrayMonth= new ArrayList<String>();
-		
+
+		ArrayList<String> ArrayMonth = new ArrayList<String>();
+
 		ArrayMonth.add("January");
 		ArrayMonth.add("February");
 		ArrayMonth.add("March");
@@ -26,11 +24,10 @@ public class Month {
 		ArrayMonth.add("October");
 		ArrayMonth.add("November");
 		ArrayMonth.add("December");
-		
-		ArrayMonth.forEach(month-> {
-			System.out.println("Months of the year: " +month);
-			});
-		
+
+		ArrayMonth.forEach(month -> {
+			System.out.println("Months of the year: " + month);
+		});
 
 	}
 
