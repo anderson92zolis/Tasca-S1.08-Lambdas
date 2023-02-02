@@ -18,7 +18,7 @@ public class App {
 		MathInterface division = (number1, number2) -> number1 / number2;
 
 		operationMethod(1, 5.12f, addition, "addition");
-		operationMethod(12.1f, -1, subtract, "subtract");
+		operationMethod(12.1f, 1, subtract, "subtract");
 		operationMethod(100.12f, 3, multiply, "multiply");
 		operationMethod(56, 2.33f, division, "division");
 

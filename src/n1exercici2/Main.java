@@ -25,7 +25,8 @@ public class Main {
 	public static ArrayList<String> containO(ArrayList<String> llistaString) {
 
 		ArrayList<String> containO = (ArrayList<String>) llistaString.stream()
-				.filter(word -> word.toLowerCase().contains("o") && word.length() > 5).collect(Collectors.toList());
+				.filter(s -> s.toLowerCase().contains("o") && s.length() > 5)
+				.collect(Collectors.toList());
 
 		return containO;
 	}

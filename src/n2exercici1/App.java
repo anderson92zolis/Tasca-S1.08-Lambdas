@@ -27,7 +27,7 @@ public class App {
 		 */
 
 		ArrayList<String> lookFirstAndThree = (ArrayList<String>) properNounsAList.stream()
-				.filter(cadena -> cadena.startsWith("A") && cadena.length() == 3)
+				.filter(s -> s.startsWith("A") && s.length() == 3)
 				.collect(Collectors.toList());
 
 		return lookFirstAndThree;

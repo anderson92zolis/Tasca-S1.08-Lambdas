@@ -27,7 +27,8 @@ public class App {
 		 * is odd) more that number of the Arryalist {1,2,3,,4} -> "o1, e2, 03, e4"
 		 */
 
-		String evenOdd = numbersAlist.stream().map(number -> (number % 2 == 0 ? "e" + number : "o" + number))
+		String evenOdd = numbersAlist.stream()
+				.map(number -> (number % 2 == 0 ? "e" + number : "o" + number))
 				.collect(Collectors.joining(", "));
 
 		return evenOdd;

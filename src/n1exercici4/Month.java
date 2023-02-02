@@ -33,9 +33,8 @@ public class Month {
 
 		public static void printYearsMonths(ArrayList<String> ArrayMonth) {
 
-			ArrayMonth.forEach(
-					// Referring static method
-					System.out::println);
+			ArrayMonth.forEach(																		
+					System.out::println);		// Referring static method
 		}
 	}
 

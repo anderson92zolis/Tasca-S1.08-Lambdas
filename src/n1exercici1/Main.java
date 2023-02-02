@@ -1,4 +1,4 @@
-package n1exercici1;
+ package n1exercici1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,7 +25,8 @@ public class Main {
 	public static ArrayList<String> containO(ArrayList<String> llistaString) {
 
 		ArrayList<String> containO = (ArrayList<String>) llistaString.stream()
-				.filter(word -> word.toLowerCase().contains("o")).collect(Collectors.toList());
+				.filter(word -> word.toLowerCase().contains("o"))
+				.collect(Collectors.toList());
 
 		return containO;
 	}

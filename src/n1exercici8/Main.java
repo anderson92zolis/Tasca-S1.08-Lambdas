@@ -12,20 +12,28 @@ public class Main {
 		 * cadena i comprova si el resultat és correcte.
 		 */
 
-		FuntionalInterface reverseString = word -> {
-			StringBuilder stringSB = new StringBuilder(word);
-			return stringSB.reverse().toString();
-		};
+		
+		
 		String wordToReverse = "KRAKEN";
-		String reverseWord = reverseString.reverse(wordToReverse); // mediante el método reverse de la IntFunc.
-		System.out.println("Using FuncInt:  " + reverseWord);
-
-	}
-
-	/*
-	 * public static String reverse(String string) { return Stream.of(string)
-	 * .map(word->new StringBuilder(word).reverse())
-	 * .collect(Collectors.joining(" ")); }
-	 */
-
+		
+		FuntionalInterface reverso= (x-> new StringBuilder(x).reverse().toString());
+		System.out.println(reverso.myReverse(wordToReverse));
+		
+	}		
 }
+// mis notas
+/*FuntionalInterface reverseString = word -> {
+StringBuilder stringSB = new StringBuilder(word);
+return stringSB.reverse().toString();
+};
+
+
+String wordToReverse = "KRAKEN";
+String reverseWord = reverseString.reverse(wordToReverse); // mediante el método reverse de la IntFunc.
+System.out.println("Using FuncInt:  " + reverseWord);*/
+
+/*
+* public static String reverse(String string) { return Stream.of(string)
+* .map(word->new StringBuilder(word).reverse())
+* .collect(Collectors.joining(" ")); }
+*/
